@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Simplecov::Summary::VERSION
   gem.authors       = ["Boris Staal"]
   gem.email         = ["boris@roundlake.ru"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{SimpleCov formatter that prints nice colored summary for your coverage straight into your console.}
+  gem.summary       = gem.description
+  gem.homepage      = "https://github.com/inossidabile/simplecov-summary"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
