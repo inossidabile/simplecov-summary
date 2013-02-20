@@ -1,5 +1,6 @@
 require 'simplecov-summary/version'
 require 'simplecov'
+require 'colored'
 
 class SimpleCov::Formatter::SummaryFormatter
   def format(result)
