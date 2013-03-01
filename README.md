@@ -4,6 +4,8 @@ SimpleCov formatter that prints nice colored summary for your coverage straight 
 
 ![](http://f.cl.ly/items/102M0n1q3P3E3h3Y3z3m/Снимок%20экрана%202012-12-29%20в%204.29.15.png)
 
+[![endorse](http://api.coderwall.com/inossidabile/endorsecount.png)](http://coderwall.com/inossidabile)
+
 ## Installation
 
 Add this line to your application's Gemfile:
