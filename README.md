@@ -59,3 +59,7 @@ Below you can find the example for a typical Rails RSpec configuration. The foll
 ## License
 
 It is free software, and may be redistributed under the terms of MIT license.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/inossidabile/simplecov-summary/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
