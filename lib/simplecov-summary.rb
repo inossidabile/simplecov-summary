@@ -1,6 +1,6 @@
 require 'simplecov-summary/version'
 require 'simplecov'
-require 'colored'
+require 'colorize'
 
 class SimpleCov::Formatter::SummaryFormatter
   def format(result)
@@ -21,9 +21,9 @@ class SimpleCov::Formatter::SummaryFormatter
         :red
       end
 
-      puts "  #{name.rjust(name_length)}: #{percentage}%".send(color)
+      puts "  #{name.rjust(name_length)}: #{percentage}%".colorize(color)
     end
 
-    print "  #{'Total'.rjust(name_length)}: #{result.covered_percent.round(2)}%"
+    puts "  #{'Total'.rjust(name_length)}: #{result.covered_percent.round(2)}%"
   end
 end
