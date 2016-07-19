@@ -38,11 +38,9 @@ Below you can find the example for a typical Rails RSpec configuration. The foll
     add_group 'Decorators', 'app/decorators'
     add_group 'Helpers', 'app/helpers'
     add_group 'Libraries', 'lib'
-
-    at_exit do
-    end
   end
 
+  # Put this in for RSpec, Minitest will plug in automatically
   RSpec.configure do |config|
     config.after(:suite) do
       if SimpleCov.running

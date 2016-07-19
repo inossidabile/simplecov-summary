@@ -4,7 +4,6 @@ require 'colorize'
 
 class SimpleCov::Formatter::SummaryFormatter
   def format(result)
-    puts "\n\n"
     puts "SimpleCov stats:"
 
     name_length = (result.groups.keys + ["Total"]).map{|x| x.length}.max
