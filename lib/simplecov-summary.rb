@@ -3,8 +3,12 @@ require 'simplecov'
 require 'colorize'
 
 class SimpleCov::Formatter::SummaryFormatter
+  def initialize(output = nil)
+    @output = output || STDOUT
+  end
+
   def format(result)
-    puts "SimpleCov stats:"
+    @output.puts "SimpleCov stats:"
 
     name_length = (result.groups.keys + ["Total"]).map{|x| x.length}.max
 
@@ -20,9 +24,9 @@ class SimpleCov::Formatter::SummaryFormatter
         :red
       end
 
-      puts "  #{name.rjust(name_length)}: #{percentage}%".colorize(color)
+      @output.puts "  #{name.rjust(name_length)}: #{percentage}%".colorize(color)
     end
 
-    puts "  #{'Total'.rjust(name_length)}: #{result.covered_percent.round(2)}%"
+    @output.puts "  #{'Total'.rjust(name_length)}: #{result.covered_percent.round(2)}%"
   end
 end
